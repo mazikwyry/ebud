@@ -32,11 +32,11 @@ class GallController extends Controller
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
-				'users'=>array('@'),
+				'users'=>array('eurobud'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('eurobud'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -90,11 +90,12 @@ class GallController extends Controller
 	            $model->id_parent = $_POST['id_parent'];
 	            $model->parent_type = $_POST['parent_type'];
 	            $model->photo = $fileName;
+
 	            if ($model->save()){
 		            $status_header = 'HTTP/1.1 200 OK';
 				    header($status_header);
 				    header('Content-type:text/html');
-				    echo "file ".$fileName." uploaded!";
+				    echo '{"id":"'.$model->getPrimaryKey().'"}';
 				}else{
 					$status_header = 'HTTP/1.1 400 Bad Request';
 					header($status_header);
