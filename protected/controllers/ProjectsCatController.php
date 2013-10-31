@@ -127,7 +127,7 @@ class ProjectsCatController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('ProjectsCat');
+		$dataProvider = ProjectsCat::model()->findAll();
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

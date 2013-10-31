@@ -7,8 +7,6 @@
 	'enableAjaxValidation'=>true
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
@@ -46,7 +44,6 @@
 <div class="cl"></div>
 <br/>
 <?php if (!$model->isNewRecord) { ?>
-<?php echo count($model->images); ?>
 <div class="form">
 	<form class="dropzone" id="dropzone" action="<?php echo Yii::app()->createUrl('gall/create'); ?>" style="text-align:center;">
 		<input type="hidden" name="id_parent" value="<?php echo $model->id; ?>" />
@@ -55,7 +52,7 @@
 		<div class="cl"></div>
 	</form>
 </div>
-<?php } ?>
+
 
 
 <script type="text/javascript">
@@ -67,7 +64,7 @@
 
 		<?php foreach($model->images as $image) {?>
 
-			mockFile = { name: "Uploaded", size: 1000 };
+			mockFile = { name: "<?php echo $image->photo; ?>", size: 1000 };
 		
 			// Call the default addedfile event handler
 			this.emit("addedfile", mockFile);
@@ -75,6 +72,7 @@
 			// And optionally show the thumbnail of the file:
 			this.emit("thumbnail", mockFile, "<?php echo Yii::app()->request->baseUrl."/images/images/big/".$image->photo; ?>");
 
+			this.emit("removebutton", mockFile, <?php echo $image->id; ?>);
 		<?php } ?>
 
 
@@ -104,3 +102,4 @@
 
 
 </script>
+<?php } ?>

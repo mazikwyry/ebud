@@ -11,7 +11,18 @@ $this->menu=array(
 
 <h1>Projects Cats</h1>
 
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>
+<?php
+	if(count($dataProvider)>0)
+		$width = 100 / count($dataProvider);
+	else
+		$width = "nie ma";
+	echo $width;
+?>
+
+
+<?php foreach ($dataProvider as  $model) {
+	echo $model->id;
+}
+?>
+
+

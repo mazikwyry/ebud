@@ -408,7 +408,7 @@ require.register("dropzone/lib/dropzone.js", function(exports, require, module){
     */
 
 
-    Dropzone.prototype.events = ["drop", "dragstart", "dragend", "dragenter", "dragover", "dragleave", "selectedfiles", "addedfile", "removedfile", "thumbnail", "error", "errormultiple", "processing", "processingmultiple", "uploadprogress", "totaluploadprogress", "sending", "sendingmultiple", "success", "successmultiple", "canceled", "canceledmultiple", "complete", "completemultiple", "reset", "maxfilesexceeded"];
+    Dropzone.prototype.events = ["drop", "dragstart", "dragend", "dragenter", "dragover", "dragleave", "selectedfiles", "addedfile", "removedfile", "thumbnail", "error", "errormultiple", "processing", "processingmultiple", "uploadprogress", "totaluploadprogress", "sending", "sendingmultiple", "success", "successmultiple", "canceled", "canceledmultiple", "complete", "completemultiple", "reset", "maxfilesexceeded", "removebutton"];
 
     Dropzone.prototype.defaultOptions = {
       url: null,
@@ -574,6 +574,24 @@ require.register("dropzone/lib/dropzone.js", function(exports, require, module){
         thumbnailElement = file.previewElement.querySelector("[data-dz-thumbnail]");
         thumbnailElement.alt = file.name;
         return thumbnailElement.src = dataUrl;
+      },
+      removebutton: function(file,id) {
+        var thumbnailElement;
+        thumbnailElement = $(file.previewTemplate).append("<a class=\"dz-remove\" href=\"javascript:undefined;\" id=\"image"+id+"\">Remove file</a>");
+        var _this = this;
+          
+          $("#image"+id).click(function(e) {
+            // Make sure the button click doesn't submit the form:
+            e.preventDefault();
+            e.stopPropagation();
+            $.post( 
+              "../../gall/delete/"+id+"?ajax=imageupload", 
+              function( data ) {
+            _this.removeFile(file);
+              }
+            );
+          });
+       return thumbnailElement
       },
       error: function(file, message) {
         file.previewElement.classList.add("dz-error");

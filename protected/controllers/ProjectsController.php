@@ -62,10 +62,12 @@ class ProjectsController extends Controller
 	 */
 	public function actionCreate()
 	{
-		// Uncomment the following line if AJAX validation is needed
-		 $this->performAjaxValidation($model);
 
 		$model=new Projects;
+		// Uncomment the following line if AJAX validation is needed
+		$this->performAjaxValidation($model);
+
+
 		if(isset($_POST['Projects']))
 		{
 			$model->attributes=$_POST['Projects'];
@@ -128,7 +130,7 @@ class ProjectsController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Projects');
+        $dataProvider = Projects::model()->findAll();
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
