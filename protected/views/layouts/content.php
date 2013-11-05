@@ -55,13 +55,11 @@
         </div>
     </section>
     <div class="cl"></div>
-    <section class="content">
-        <div class="con align_left">
-            <?php echo $content; ?>
-            <div class="cl"></div>
-            
-        </div>
-    </section>
+ </section>
+    <div class="cl"></div>
+
+        <?php echo $content; ?>
+
     <div class="cl"></div>
     <footer>
         <div class="con">
