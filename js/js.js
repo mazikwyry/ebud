@@ -27,4 +27,8 @@
 		    // }
 		}
 
+		$("body").on("click", ".back_button", function(){
+			$(".show-project").stop(true,true).slideUp();
+		});
+
 	});

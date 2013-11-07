@@ -24,20 +24,23 @@ $this->menu=array(
 			<?php $projects=count($model->projects); ?>
 			<?php $height = 100 / $projects; ?>
 			<?php foreach ($model->projects as $project) { ?>
+				<?php
+					$images = "";  
+					foreach ($project->images as $image) { 
+						$images.=CHtml::image(Yii::app()->request->baseUrl."/images/images/big/".$image->photo, "Image");
+					}
+					$images.= "<span>".$project->name."</span>";
+				?>
+				<?php echo CHtml::ajaxLink(
+				    $images,
+				    array('/projects/'.$project->id), // Yii URL
+				    array('success' => 'js:function(data) { 
+						$(".show-project").slideDown();
+						$(".show-project").html(data)
+				     }','method' => "GET"),
+				    array('class' => 'project', 'style'=>'height:'.$height.'%;')
+				); ?>
 
-				<div class="project" style="height:<?php echo $height; ?>%;">
-					<?php foreach ($project->images as $image) { ?><?php echo CHtml::image(Yii::app()->request->baseUrl."/images/images/big/".$image->photo, "Image"); ?><?php }?>
-					<span>
-						<?php echo CHtml::ajaxLink(
-						    $project->name,
-						    array('/projects/'.$project->id), // Yii URL
-						    array('success' => 'js:function(data) { 
-								$(".show-project").slideDown();
-								$(".show-project").html(data)
-						     }','method' => "GET")
-						); ?>
-					</span>
-				</div>
 			<?php }?>
 		</div>
 
