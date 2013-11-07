@@ -16,9 +16,4 @@
 	<?php echo CHtml::encode($data->price); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('photo')); ?>:</b>
-	<?php echo CHtml::encode($data->photo); ?>
-	<br />
-
-
 </div>

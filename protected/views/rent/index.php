@@ -4,12 +4,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Rent', 'url'=>array('create')),
-	array('label'=>'Manage Rent', 'url'=>array('admin')),
+	array('label'=>'Lista Sprzętów', 'url'=>array('admin')),
+	array('label'=>'Nowy Sprzęt', 'url'=>array('create')),
 );
 ?>
 
-<h1>Rents</h1>
+<h1>Sprzęty</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

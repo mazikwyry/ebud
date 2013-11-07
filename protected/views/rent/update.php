@@ -6,13 +6,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Rent', 'url'=>array('index')),
-	array('label'=>'Create Rent', 'url'=>array('create')),
-	array('label'=>'View Rent', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Rent', 'url'=>array('admin')),
+	array('label'=>'Lista Sprzętów', 'url'=>array('admin')),
+	array('label'=>'Nowy Sprzęt', 'url'=>array('create')),
+	array('label'=>'Zobacz Sprzęt', 'url'=>array('view', 'id'=>$model->id)),
 );
 ?>
 
-<h1>Update Rent <?php echo $model->id; ?></h1>
+<h1>Edytuj Sprzęt</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

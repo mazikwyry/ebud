@@ -20,6 +20,8 @@
             <li><?php echo CHtml::link("Aktualności", Yii::app()->createUrl("news/admin")); ?><a></a></li>
             <li><?php echo CHtml::link("Kategorie Realizacji", Yii::app()->createUrl("projectsCat/admin")); ?><a></a></li>
             <li><?php echo CHtml::link("Realizacje", Yii::app()->createUrl("projects/admin")); ?><a></a></li>
+            <li><?php echo CHtml::link("Wypożyczalnia", Yii::app()->createUrl("rent/admin")); ?><a></a></li>
+            <li><?php echo CHtml::link("Oferty pracy", Yii::app()->createUrl("career/admin")); ?><a></a></li>
         </ul>
     </div>
     <div class="seventy-box right">

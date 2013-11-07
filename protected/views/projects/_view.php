@@ -20,5 +20,4 @@
 	<?php echo CHtml::encode($data->id_cat); ?>
 	<br />
 
-
 </div>

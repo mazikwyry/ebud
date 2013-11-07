@@ -38,10 +38,9 @@ class Rent extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('item, description, price, photo', 'required'),
+			array('item, description, price', 'required'),
 			array('item', 'length', 'max'=>200),
 			array('price', 'length', 'max'=>100),
-			array('photo', 'length', 'max'=>300),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, item, description, price, photo', 'safe', 'on'=>'search'),
@@ -56,6 +55,7 @@ class Rent extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'images'=>array(self::HAS_MANY, 'Gall', 'id_parent', 'condition'=>'parent_type="rent"'),
 		);
 	}
 
@@ -66,10 +66,10 @@ class Rent extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'item' => 'Item',
-			'description' => 'Description',
-			'price' => 'Price',
-			'photo' => 'Photo',
+			'item' => 'Artykuł',
+			'description' => 'Opis',
+			'price' => 'Cena',
+			'photo' => 'Zdjęcia',
 		);
 	}
 

@@ -25,13 +25,8 @@
 		<?php echo $form->textField($model,'price',array('size'=>60,'maxlength'=>100)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'photo'); ?>
-		<?php echo $form->textField($model,'photo',array('size'=>60,'maxlength'=>300)); ?>
-	</div>
-
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton('Szukaj'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

@@ -6,10 +6,9 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Projects', 'url'=>array('index')),
-	array('label'=>'Create Projects', 'url'=>array('create')),
-	array('label'=>'View Projects', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Projects', 'url'=>array('admin')),
+	array('label'=>'Lista realizacji', 'url'=>array('admin')),
+	array('label'=>'Nowa realizacja', 'url'=>array('create')),
+	array('label'=>'Zobacz realizację', 'url'=>array('view', 'id'=>$model->id)),
 );
 ?>
 

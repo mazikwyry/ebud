@@ -6,7 +6,7 @@ class RentController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout='//layouts/admin';
 
 	/**
 	 * @return array action filters
@@ -14,7 +14,7 @@ class RentController extends Controller
 	public function filters()
 	{
 		return array(
-			'accessControl', // perform access control for CRUD operations
+			'userGroupsAccessControl', // perform access control for CRUD operations
 		);
 	}
 
@@ -32,11 +32,11 @@ class RentController extends Controller
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
-				'users'=>array('@'),
+				'users'=>array('eurobud'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('eurobud'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -64,13 +64,13 @@ class RentController extends Controller
 		$model=new Rent;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 
 		if(isset($_POST['Rent']))
 		{
 			$model->attributes=$_POST['Rent'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('update','id'=>$model->id));
 		}
 
 		$this->render('create',array(
@@ -88,7 +88,7 @@ class RentController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 
 		if(isset($_POST['Rent']))
 		{
