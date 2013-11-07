@@ -1,18 +1,17 @@
 <?php
 $this->breadcrumbs=array(
-	'Careers'=>array('index'),
+	'Oferty pracy'=>array('index'),
 	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'Edytuj',
 );
 
 $this->menu=array(
-	array('label'=>'List Career', 'url'=>array('index')),
-	array('label'=>'Create Career', 'url'=>array('create')),
-	array('label'=>'View Career', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Career', 'url'=>array('admin')),
+	array('label'=>'Zarządzaj ofertami', 'url'=>array('admin')),
+	array('label'=>'Nowa oferta', 'url'=>array('create')),
+	array('label'=>'Zobacz ofertę', 'url'=>array('view', 'id'=>$model->id)),
 );
 ?>
 
-<h1>Update Career <?php echo $model->id; ?></h1>
+<h1>Edytuj ofertę pracy <?php echo $model->id; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

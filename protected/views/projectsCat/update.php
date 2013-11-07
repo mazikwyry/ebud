@@ -1,18 +1,17 @@
 <?php
 $this->breadcrumbs=array(
-	'Projects Cats'=>array('index'),
+	'Kategorie realizacji'=>array('index'),
 	$model->name=>array('view','id'=>$model->id),
-	'Update',
+	'Edytuj',
 );
 
 $this->menu=array(
-	array('label'=>'List ProjectsCat', 'url'=>array('index')),
-	array('label'=>'Create ProjectsCat', 'url'=>array('create')),
-	array('label'=>'View ProjectsCat', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage ProjectsCat', 'url'=>array('admin')),
+	array('label'=>'Zarządzaj kategoriami', 'url'=>array('admin')),
+	array('label'=>'Nowa kategoria', 'url'=>array('create')),
+	array('label'=>'Zobacz kategorię', 'url'=>array('view', 'id'=>$model->id)),
 );
 ?>
 
-<h1>Update ProjectsCat <?php echo $model->id; ?></h1>
+<h1>Edytuj kategorię realizacji: <?php echo $model->id; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

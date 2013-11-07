@@ -1,8 +1,8 @@
 <?php
 $this->breadcrumbs=array(
-	'Rents'=>array('index'),
+	'Wypożyczalnia'=>array('index'),
 	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'Edytuj Sprzęt',
 );
 
 $this->menu=array(

@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs=array(
-	'Projects Cats',
+	'Kategorie realizacji',
 );
 
 $this->menu=array(

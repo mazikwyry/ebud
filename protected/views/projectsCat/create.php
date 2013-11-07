@@ -1,15 +1,14 @@
 <?php
 $this->breadcrumbs=array(
-	'Projects Cats'=>array('index'),
-	'Create',
+	'Kategorie realizacji'=>array('index'),
+	'Nowa',
 );
 
 $this->menu=array(
-	array('label'=>'List ProjectsCat', 'url'=>array('index')),
-	array('label'=>'Manage ProjectsCat', 'url'=>array('admin')),
+	array('label'=>'Zarządzaj kategoriami', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create ProjectsCat</h1>
+<h1>Dodaj kategorię realizacji</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

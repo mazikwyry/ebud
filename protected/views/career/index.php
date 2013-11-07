@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs=array(
-	'Careers',
+	'Oferty pracy',
 );
 
 $this->menu=array(

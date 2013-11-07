@@ -64,7 +64,7 @@ class News extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'date_added' => 'Date Added',
+			'date_added' => 'Data dodania',
 			'title' => 'Tytul',
 			'content' => 'Treść',
 			'image' => 'Zdjęcie',

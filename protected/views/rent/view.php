@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs=array(
-	'Rents'=>array('index'),
+	'Wypożyczalnia'=>array('index'),
 	$model->id,
 );
 

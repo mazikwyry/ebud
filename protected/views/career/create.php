@@ -1,15 +1,14 @@
 <?php
 $this->breadcrumbs=array(
-	'Careers'=>array('index'),
-	'Create',
+	'Oferty pracy'=>array('index'),
+	'Nowa',
 );
 
 $this->menu=array(
-	array('label'=>'List Career', 'url'=>array('index')),
-	array('label'=>'Manage Career', 'url'=>array('admin')),
+	array('label'=>'Zarządzaj ofertami', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Career</h1>
+<h1>Nowa oferta pracy</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

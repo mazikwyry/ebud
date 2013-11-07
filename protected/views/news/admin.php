@@ -5,8 +5,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List News', 'url'=>array('index')),
-	array('label'=>'Create News', 'url'=>array('create')),
+	array('label'=>'Nowy news', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "

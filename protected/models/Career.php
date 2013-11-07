@@ -62,8 +62,8 @@ class Career extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'position' => 'Position',
-			'description' => 'Description',
+			'position' => 'Stanowisko',
+			'description' => 'Opis',
 		);
 	}
 

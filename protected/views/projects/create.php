@@ -1,11 +1,11 @@
 <?php
 $this->breadcrumbs=array(
-	'Projects'=>array('index'),
-	'Create',
+	'Realizacje'=>array('index'),
+	'Nowa',
 );
 
 $this->menu=array(
-	array('label'=>'Lista realizacji', 'url'=>array('admin')),
+	array('label'=>'Zarządzaj realizacjami', 'url'=>array('admin')),
 );
 ?>
 

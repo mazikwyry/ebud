@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs=array(
-	'Rents',
+	'Wypożyczalnia',
 );
 
 $this->menu=array(

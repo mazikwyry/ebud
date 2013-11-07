@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs=array(
-	'Rents'=>array('index'),
-	'Create',
+	'Wypożyczalnia'=>array('index'),
+	'Nowy sprzęt',
 );
 
 $this->menu=array(

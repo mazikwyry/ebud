@@ -1,12 +1,11 @@
 <?php
 $this->breadcrumbs=array(
-	'Projects Cats'=>array('index'),
-	'Manage',
+	'Kategorie realizacji'=>array('index'),
+	'Zarządzaj',
 );
 
 $this->menu=array(
-	array('label'=>'List ProjectsCat', 'url'=>array('index')),
-	array('label'=>'Create ProjectsCat', 'url'=>array('create')),
+	array('label'=>'Nowa kategoria', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "

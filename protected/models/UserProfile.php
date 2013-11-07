@@ -65,9 +65,9 @@ class UserProfile extends CActiveRecord
 	{
 		return array(
 			'ug_id' => 'Ug',
-			'first_name' => 'First Name',
-			'last_name' => 'Last Name',
-			'organization' => 'Organization',
+			'first_name' => 'Imię',
+			'last_name' => 'Nazwisko',
+			'organization' => 'Organizacja',
 		);
 	}
 

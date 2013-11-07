@@ -1,15 +1,14 @@
 <?php
 $this->breadcrumbs=array(
-	'Projects Cats'=>array('index'),
+	'Kategorie realizacji'=>array('index'),
 	$model->name,
 );
 
 $this->menu=array(
-	array('label'=>'List ProjectsCat', 'url'=>array('index')),
-	array('label'=>'Create ProjectsCat', 'url'=>array('create')),
-	array('label'=>'Update ProjectsCat', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete ProjectsCat', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage ProjectsCat', 'url'=>array('admin')),
+	array('label'=>'Zarządzaj kategoriami', 'url'=>array('admin')),
+	array('label'=>'Nowa kategoria', 'url'=>array('create')),
+	array('label'=>'Edytuj kategorię', 'url'=>array('update', 'id'=>$model->id)),
+	array('label'=>'Usuń kategorię', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 );
 ?>
 
