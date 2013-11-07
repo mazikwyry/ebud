@@ -1,20 +1,22 @@
 <?php $this->beginContent('//layouts/content'); ?>
-   
-    <div class="twenty-five-box left no-padding">
-        
-        <ul class="left-menu">
-            <li class="current"><a>operacje</a></li>
-        </ul>
-        <?php
-            $this->beginWidget('zii.widgets.CPortlet');
-            $this->widget('zii.widgets.CMenu', array(
-                'items'=>Yii::app()->controller->menu,
-                'htmlOptions'=>array('class'=>'left-menu'),
-            ));
-            $this->endWidget();
-        ?>
-        <br/>
+<section class="content">
+    <div class="con align_left">   
+        <div class="twenty-five-box left no-padding">
+            
+            <ul class="left-menu">
+                <li class="current"><a>operacje</a></li>
+            </ul>
+            <?php
+                $this->beginWidget('zii.widgets.CPortlet');
+                $this->widget('zii.widgets.CMenu', array(
+                    'items'=>Yii::app()->controller->menu,
+                    'htmlOptions'=>array('class'=>'left-menu'),
+                ));
+                $this->endWidget();
+            ?>
+            <br/>
 
+<<<<<<< HEAD
          <ul class="left-menu">
             <li class="current"><a>działy</a></li>
             <li><?php echo CHtml::link("Aktualności", Yii::app()->createUrl("news/admin")); ?><a></a></li>
@@ -34,7 +36,8 @@
         ?>
         <?php echo $content; ?>
     </div>
-
+    <div class="cl"></div>
+</section>
 
 
 <?php $this->endContent(); ?>

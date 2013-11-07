@@ -1,3 +1,5 @@
-<?php $this->beginContent('//layouts/main'); ?>
-   <?php echo $content; ?>
+<?php $this->beginContent('//layouts/content'); ?>
+<section class="content no-padding" >
+		<?php echo $content; ?>
+</section>
 <?php $this->endContent(); ?>

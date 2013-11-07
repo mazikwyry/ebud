@@ -16,28 +16,7 @@
     </head>
   <body>
     <header>
-        <nav>
-         <div class="con">
-         <ul>
-            <li class="sub-trigger">o firmie</li>
-            <li>oferta</li>
-            <li>realizacje</li>
-            <li class="logo"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/logo.png" /></li>
-            <li>wypożyczalnia</li>
-            <li>kontakt</li>
-         </ul>
-            
-         </div>
-        </nav>
-        <div class="sub-menu">
-            <div class="con">
-                <ul>
-                    <li>zespól</li>
-                    <li>historia</li>
-                    <li>referencje</li>
-                </ul>
-            </div>
-        </div>
+        <?php echo $this->renderPartial('//layouts/_menu'); ?>
     </header>
 
     <section class="motto">

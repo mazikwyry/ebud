@@ -13,33 +13,12 @@
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/less.js" type="text/javascript"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui-1.10.3.custom.min.js"></script>
-        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/dropzone.js">
+        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/dropzone.js"></script>
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/js.js"></script>
     </head>
   <body>
     <header>
-        <nav>
-         <div class="con">
-         <ul>
-            <li class="sub-trigger">o firmie</li>
-            <li>oferta</li>
-            <li>realizacje</li>
-            <li class="logo"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/logo.png" /></li>
-            <li>wypożyczalnia</li>
-            <li>kontakt</li>
-         </ul>
-            
-         </div>
-        </nav>
-        <div class="sub-menu">
-            <div class="con">
-                <ul>
-                    <li>zespól</li>
-                    <li>historia</li>
-                    <li>referencje</li>
-                </ul>
-            </div>
-        </div>
+        <?php echo $this->renderPartial('//layouts/_menu'); ?>
     </header>
 
     <section class="choise sub-page">
@@ -55,13 +34,11 @@
         </div>
     </section>
     <div class="cl"></div>
-    <section class="content">
-        <div class="con align_left">
-            <?php echo $content; ?>
-            <div class="cl"></div>
-            
-        </div>
-    </section>
+ </section>
+    <div class="cl"></div>
+
+        <?php echo $content; ?>
+
     <div class="cl"></div>
     <footer>
         <div class="con">
