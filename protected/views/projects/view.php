@@ -4,7 +4,7 @@
 		<?php 
 
 			foreach ($model->images as $image) { 
-				echo CHtml::image(Yii::app()->request->baseUrl."/images/images/big/".$image->photo, "Image");
+				echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl."/images/images/big/".$image->photo, "Image"), Yii::app()->request->baseUrl."/images/images/big/".$image->photo, array('data-lightbox' => 'gall' ));
 			}
 
 		 ?>
