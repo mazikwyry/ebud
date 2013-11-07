@@ -16,7 +16,6 @@
             ?>
             <br/>
 
-<<<<<<< HEAD
          <ul class="left-menu">
             <li class="current"><a>działy</a></li>
             <li><?php echo CHtml::link("Aktualności", Yii::app()->createUrl("news/admin")); ?><a></a></li>
