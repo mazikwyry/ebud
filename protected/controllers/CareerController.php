@@ -70,7 +70,7 @@ class CareerController extends Controller
 		{
 			$model->attributes=$_POST['Career'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('admin'));
 		}
 
 		$this->render('create',array(
@@ -94,7 +94,7 @@ class CareerController extends Controller
 		{
 			$model->attributes=$_POST['Career'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('admin'));
 		}
 
 		$this->render('update',array(
