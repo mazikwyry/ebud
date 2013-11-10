@@ -46,8 +46,7 @@
                 <div class="header">
                     o firmie
                 </div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, libero, ullam saepe animi id fugit hic illo voluptatum. Quae, illo corporis architecto qui illum neque explicabo blanditiis provident est nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, sit aut neque? Corrupti, excepturi, a, iste ducimus culpa consectetur quae molestiae fuga dicta velit ipsum maiores qui est accusantium nesciunt. <br/><br/>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, sit, corporis, veritatis maiores odit sunt.
+                Jesteśmy firmą dla której budownictwo jest pasją, której oddajemy się bez reszty. Nie biomy się trudnych wyzwań i wymagających Inwestorów. Nasze niemałe doświadczenie w branży budowlanej gwarantuje, że każde powierzone nam zadanie zrealizujemy terminowo i z najwyższą jakością.
                 <br/><br/>
 
             </div>
