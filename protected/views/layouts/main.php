@@ -63,7 +63,38 @@
 
             </div>
             <div class="cl"></div>
-            <?php echo $content; ?>
+        </div>
+        <div class="big-info mission">
+            <div class="con">
+                <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/cel.png" />
+                <div class="big-content">
+                    <div class="title">Nasza misja</div>
+                    <div class="shot">Misją firmy stało się <strong>stworzenie wiarygodnego i solidnego partnera dla realizacji celów inwestycyjnych</strong>. Osiągamy powyższy cel poprzez dbanie o konkurencyjność, utrzymywanie stałych relacji z Inwestorami oraz poprzez fachowe doradztwo i wykonawstwo.</div>
+                </div>
+                <div class="cl"></div>
+            </div>
+        </div>
+        <div class="big-info team">
+            <div class="con">
+                <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/team.png" />
+                <div class="big-content">
+                    <div class="title">Zespół</div>
+                    <div class="shot">Obecnie zatrudniamy <strong>29 osób o wysokich kwalifikacjach zawodowych</strong> popartych solidną wiedzą i doświadczeniem. Ponadto współpracujemy ze sprawdzoną grupą podwykonawców i dostawców.</div>
+                </div>
+                <div class="cl"></div>
+            </div>
+        </div>
+        <div class="recent-news">
+            <div class="con">
+                <div class="news-header">
+                    <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/news.png" />
+                    aktualności
+                </div>
+
+                <?php echo $content; ?>
+                <div class="cl"></div>
+
+            </div>
         </div>
     </section>
     <div class="cl"></div>
