@@ -7,7 +7,7 @@ class RentController extends Controller
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
 	public $layout='//layouts/admin';
-
+	public $loadJQuery=true;
 	/**
 	 * @return array action filters
 	 */
@@ -142,7 +142,7 @@ class RentController extends Controller
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Rent']))
 			$model->attributes=$_GET['Rent'];
-
+		$this->loadJQuery=false;
 		$this->render('admin',array(
 			'model'=>$model,
 		));

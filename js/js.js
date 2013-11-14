@@ -31,4 +31,11 @@
 			$(".show-project").stop(true,true).slideUp();
 		});
 
+		$('.special_link').click(function(){
+		    $('html, body').animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top - 68
+		    }, 500);
+		    return false;
+		});
+
 	});

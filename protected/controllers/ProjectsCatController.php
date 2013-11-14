@@ -7,7 +7,7 @@ class ProjectsCatController extends Controller
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
 	public $layout='//layouts/admin';
-
+	public $loadJQuery=true;
 	/**
 	 * @return array action filters
 	 */
@@ -143,7 +143,7 @@ class ProjectsCatController extends Controller
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['ProjectsCat']))
 			$model->attributes=$_GET['ProjectsCat'];
-
+		$this->loadJQuery=false;
 		$this->render('admin',array(
 			'model'=>$model,
 		));

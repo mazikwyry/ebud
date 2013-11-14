@@ -1,7 +1,7 @@
 <nav>
  <div class="con">
  <ul>
-    <li class="sub-trigger">o firmie</li>
+    <li><a href="#ofirmie" class="special_link">o firmie</a></li>
     <li>oferta</li>
     <li><?php echo CHtml::link("realizacje", Yii::app()->createUrl('projectsCat/index')) ?></li>
     <li class="logo"><?php echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl."/images/gfx/logo.png"), Yii::app()->request->baseUrl."/") ?></li>
