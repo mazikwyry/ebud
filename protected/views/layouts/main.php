@@ -13,10 +13,9 @@
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/less.js" type="text/javascript"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui-1.10.3.custom.min.js"></script>
-        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.backstretch.min.js"></script>
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/js.js"></script>
     </head>
-  <body>
+  <body name="top" id="top">
     <header>
         <?php echo $this->renderPartial('//layouts/_menu'); ?>
     </header>
@@ -55,78 +54,7 @@
     </section>
     <div class="cl"></div>
     <section class="content">
-        <div class="con">
-            <div class="diamond">
-                <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/house.png" />
-            </div> 
-            <div class="half align_left" style="padding-right:60px;">
-                <div class="header">
-                    o firmie
-                </div>
-                Jesteśmy firmą dla której budownictwo jest pasją, której oddajemy się bez reszty. Nie biomy się trudnych wyzwań i wymagających Inwestorów. Nasze niemałe doświadczenie w branży budowlanej gwarantuje, że każde powierzone nam zadanie zrealizujemy terminowo i z najwyższą jakością.
-                <br/><br/>
-
-            </div>
-            <div class="half align_left" style="padding-left:115px;">
-                <div class="header">
-                    kontakt
-                </div>
-                <div class="two-in-row">
-                    <input type="text" placeholder="Imię" class="left" id="name" />
-                    <input type="text" placeholder="E-mail"  class="right" id="email" />
-                </div>
-                <textarea placeholder="Twoja wiadomość" id="message"></textarea>
-                <input type="submit" value="WYŚLIJ" />
-
-            </div>
-            <div class="cl"></div>
-        </div>
-        <div class="big-info mission" name="ofirmie" id="ofirmie">
-            <div class="con">
-                <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/cel.png" />
-                <div class="big-content">
-                    <div class="title">Nasza misja</div>
-                    <div class="shot">Misją firmy stało się <strong>stworzenie wiarygodnego i solidnego partnera dla realizacji celów inwestycyjnych</strong>. Osiągamy powyższy cel poprzez dbanie o konkurencyjność, utrzymywanie stałych relacji z Inwestorami oraz poprzez fachowe doradztwo i wykonawstwo.</div>
-                </div>
-                <div class="cl"></div>
-            </div>
-        </div>
-        <div class="big-info team">
-            <div class="con">
-                <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/team.png" />
-                <div class="big-content">
-                    <div class="title">Zespół</div>
-                    <div class="shot">Obecnie zatrudniamy <strong>29 osób o wysokich kwalifikacjach zawodowych</strong> popartych solidną wiedzą i doświadczeniem. Ponadto współpracujemy ze sprawdzoną grupą podwykonawców i dostawców.</div>
-                </div>
-                <div class="cl"></div>
-            </div>
-        </div>
-        <div class="recent-news">
-            <div class="con">
-                <div class="news-header">
-                    <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/news.png" />
-                    aktualności
-                </div>
-
-                <?php echo $content; ?>
-                <div class="cl"></div>
-
-            </div>
-        </div>
-        <div class="con" style="margin:40px auto; overflow:hidden;">
-            <div class="parter-logos" id="logoParade">
-                <a href="http://mera-tychy.pl"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/mera.png" /></a>
-                <a href="http://mera-tychy.pl"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/doka.png" /></a>
-                <a href="http://mera-tychy.pl"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/mera.png" /></a>
-                <a href="http://mera-tychy.pl"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/doka.png" /></a>
-                <a href="http://mera-tychy.pl"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/mera.png" /></a>
-                <a href="http://mera-tychy.pl"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/doka.png" /></a>
-                <a href="http://mera-tychy.pl"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/mera.png" /></a>
-                <a href="http://mera-tychy.pl"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/doka.png" /></a>
-                <a href="http://mera-tychy.pl"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/mera.png" /></a>
-                <a href="http://mera-tychy.pl"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/doka.png" /></a>
-            </div>
-        </div>
+        <?php echo $content; ?>
     </section>
     <div class="cl"></div>
     <footer>
@@ -169,39 +97,5 @@
         </div>
         <div class="cl"></div>
     </footer>
-
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/logo-parade/js/jquery.mousewheel.min.js" type="text/javascript"></script>
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/logo-parade/js/jquery.kinetic.min.js" type="text/javascript"></script>
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/logo-parade/js/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#logoParade").smoothDivScroll({ 
-                autoScrollingMode: "onStart", 
-                autoScrollingDirection: "endlessLoopRight", 
-                autoScrollingStep: 1, 
-                autoScrollingInterval: 30,
-                manualContinuousScrolling: true, 
-                mousewheelScrolling: "allDirections",
-                hotSpotScrollingInterval: 5,
-                hotSpotScrollingStep: 2,
-            });
-
-            // Logo parade event handlers
-            $("#logoParade").bind("mouseover", function() {
-                $(this).smoothDivScroll("stopAutoScrolling");
-            }).bind("mouseout", function() {
-                $(this).smoothDivScroll("startAutoScrolling");
-            });
-
-        //     $("body").backstretch([
-        //           "<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/bg.jpg"
-        //         , "<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/bg2.jpg"
-        //         , "<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/bg3.jpg"
-        //         , "<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/bg4.jpg"
-        //         , "<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/bg5.jpg"
-        //     ], {duration: 3000, fade: 2000}
-        // );
-         });
-    </script>
 </body>
 </html>

@@ -38,40 +38,16 @@ class SiteController extends Controller
         $criteria->limit = "2";
         
 		$dataProvider=News::model()->findAll($criteria);
-
+		$model=new ContactForm;
         $this->render('index',array(
-            'news'=>$dataProvider)
+            'news'=>$dataProvider,'model'=>$model)
         );
 	}
 
-	public function actionBlog()
-	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
-		
-		$criteria = new CDbCriteria;
-        $criteria->order = 'date_added DESC';
-        $criteria->condition = "type='blog'";
-        
-		$dataProvider=new CActiveDataProvider(News::model(),array(         
-                'criteria'=>$criteria,
-                'pagination'=>array(
-                    'pageSize'=>10,
-                ),
-            
-            )
-            );
-            
-        $this->render('blog',array(
-            'dataProvider'=>$dataProvider
-
-        ));
-	}
-
-	public function actionAdmin()
-	{
-     	$this->layout('admin');       
-        $this->render('admin');
+	public function actionOferta()
+	{ 
+		$this->layout='//layouts/column1';
+        $this->render('oferta');
 	}
 
 	/**
@@ -101,10 +77,12 @@ class SiteController extends Controller
 			{
 				$headers="From: {$model->email}\r\nReply-To: {$model->email}";
 				mail(Yii::app()->params['adminEmail'],$model->subject,$model->body,$headers);
-				Yii::app()->user->setFlash('contact','Dziękujemy za kontakt. Odpowiemy tak szybko jak się da.');
+				Yii::app()->user->setFlash('contact','Wiadomość wysłana! Dziękujemy za kontakt.');
 				$this->refresh();
 			}
 		}
+		$this->layout='//layouts/column1';
+		$this->loadJQuery=false;
 		$this->render('contact',array('model'=>$model));
 	}
 

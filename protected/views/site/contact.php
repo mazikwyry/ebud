@@ -1,86 +1,71 @@
-<?php
-$this->pageTitle=Yii::app()->name . ' - Kontakt';
-$this->breadcrumbs=array(
-	'Contact',
-);
-?>
-<article>
-<h1>Kontakt</h1>
+<div class="con">
+	<div class="padding-box align_left">
+        <div class="big-header">
+            <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/kontakt.png" />
+            kontakt
+        </div>
 
 
 
-<?php if(Yii::app()->user->hasFlash('contact')): ?>
+		<div class="form" style="width:50%; float:right;">
 
-<div class="flash-success">
-	<?php echo Yii::app()->user->getFlash('contact'); ?>
-</div>
+		<?php $form=$this->beginWidget('CActiveForm', array(
+			'id'=>'contact-form',
+			'enableClientValidation'=>true,
+			'clientOptions'=>array(
+				'validateOnSubmit'=>true,
+			),
+		)); ?>
 
-<?php else: ?>
+			<?php echo $form->errorSummary($model); ?>
+			<?php if(Yii::app()->user->hasFlash('contact')): ?>
 
-<div class="form" style="width:50%; float:right;">
+				<div class="flash-success">
+					<?php echo Yii::app()->user->getFlash('contact'); ?>
+				</div>
 
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'contact-form',
-	'enableClientValidation'=>true,
-	'clientOptions'=>array(
-		'validateOnSubmit'=>true,
-	),
-)); ?>
+			<?php endif; ?>
 
-	<?php echo $form->errorSummary($model); ?>
+			<div class="two-in-row">
+                <?php echo $form->textField($model,'name',array("placeholder"=>"Imię", "class"=>"left", "id"=>"name")); ?>
+				<?php echo $form->textField($model,'email',array("placeholder"=>"E-mail",  "class"=>"right", "id"=>"email")); ?>
+            </div>
+            <?php echo $form->textArea($model,'body',array("placeholder"=>"Twoja wiadomość", "id"=>"message")); ?>
+            <div class="cl"></div>
+            <br/>
+			<?php if(CCaptcha::checkRequirements()): ?>
+			<div class="captcha" style="display:none; ">
+				<div>
+				<?php $this->widget('CCaptcha', array(
+		                            'clickableImage'=>false,
+		                        )); ?>
+				<?php echo $form->textField($model,'verifyCode',array("placeholder"=>"Przepisz kod z obrazka powyżej")); ?>
+				</div>
+			</div>
+			<?php endif; ?>
+			
+			<input type="submit" value="WYŚLIJ" />
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'name'); ?>
-		<?php echo $form->textField($model,'name',array('style'=>"width:90%;")); ?>
-		<?php echo $form->error($model,'name'); ?>
-	</div>
+		<?php $this->endWidget(); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('style'=>"width:90%;")); ?>
-		<?php echo $form->error($model,'email'); ?>
-	</div>
+		</div><!-- form -->
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'body'); ?>
-		<?php echo $form->textArea($model,'body',array('style'=>"width:90%; height:50px;")); ?>
-		<?php echo $form->error($model,'body'); ?>
-	</div>
-
-	<?php if(CCaptcha::checkRequirements()): ?>
-	<div class="row captcha">
-		<?php echo $form->labelEx($model,'verifyCode'); ?>
-		<div>
-		<?php $this->widget('CCaptcha', array(
-                            'clickableImage'=>false,
-                        )); ?>
-		<?php echo $form->textField($model,'verifyCode'); ?>
+		<div style="width:45%; text-align:left; font-size:16px;">
+		    <div class="museo-bigger">
+			    EUROBUD S.C.<br/>
+	            Przemysowa 66<br/>
+	            43-174 Tychy<br/>
+	            <a href="mailto:info@eurobud.tychy.pl">info@eurobud.tychy.pl</a><br/>
+			    Tel. biuro: (32) 775 46 91
+			</div>
+		    <br/>
+		    <b>Adam Nalepa</b><br/><em>Kierownik d/s przygotowania produkcji i realizacji inwestycji</em> <br/>
+			Tel. 500 663 865, <a href="mailto:adam@eurobud.tychy.pl">adam@eurobud.tychy.pl</a>
+			<br/><br/>
+			<b>Adam Włodarz</b><br/><em>Kierownik techniczno-handlowy</em> <br/>
+			Tel. 663 038 883, <a href="mailto:a.wlodarz@eurobud.tychy.pl">a.wlodarz@eurobud.tychy.pl</a>
+			<br/><br/>
 		</div>
-		<?php echo $form->error($model,'verifyCode'); ?>
+		<div class="cl"></div>
 	</div>
-	<?php endif; ?>
-	<div class="cl"></div>
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Wyślij'); ?>
-	</div>
-	<div class="cl"></div>
-
-<?php $this->endWidget(); ?>
-
-</div><!-- form -->
-
-<div style="width:45%; text-align:left;">
-	<br/>
-	<strong style="color:#B80000;">Parafia Rzymsko-Katolicka pw. Najświętszego Serca Pana Jezusa w Wyrach</strong></br>
-	ul. Ks. Franciszka Bojdoła 3, <br/>
-	43-175 Wyry<br/>
-	tel: 032 218 71 88<br/>
-	wyry [at] archidiecezja.katowice.pl
-	<br/><br/>
-	Bank Spółdzielczy w Tychach:<br>
-	61 8435 0004 0000 0000 4633 0001 
-     <br/>
 </div>
-<div class="cl"></div>
-<?php endif; ?>
-</article>

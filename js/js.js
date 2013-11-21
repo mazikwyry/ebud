@@ -33,9 +33,16 @@
 
 		$('.special_link').click(function(){
 		    $('html, body').animate({
-		        scrollTop: $( $.attr(this, 'href') ).offset().top - 68
+		        scrollTop: $( $.attr(this, 'rel') ).offset().top - 68
 		    }, 500);
 		    return false;
+		});
+
+		if($("#name").val() != "" && $("#email").val() != "" && $("#message").val() != "")
+			$(".captcha").show();
+		$("form input, form textarea").keyup(function(){
+			if($("#name").val() != "" && $("#email").val() != "" && $("#message").val() != "")
+				$(".captcha").slideDown();
 		});
 
 	});
