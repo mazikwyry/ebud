@@ -28,3 +28,5 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/tiny-mce.js"></script>

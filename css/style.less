@@ -283,7 +283,21 @@ header nav ul li{
 	font-size: 13px;
 	padding: 30px 0;
 	color: @darkgray;
+
+	a,a:visited{
+		color:@darkgray;
+		text-decoration: none;
+		display: inline-block;
+		padding-bottom: 1px;
+		border-bottom: 1px solid @orange;
+		.transition();
+		&:hover{
+			border-bottom: 1px solid transparent;
+			color:@orange;
+		}
+	}
 }
+
 
 .header{
 	font-family: "Museo700", sans-serif;
@@ -316,10 +330,13 @@ header nav ul li{
 	left:-45%;
 }
 
+form{
+	max-width: 600px;
+}
+
 input:not([type="submit"]),textarea{
 	width:100%;
 	.box-sizing-padding(5px);
-	padding-left: 30px;
 	padding-bottom: 6px;
 	border: 1px solid @lightgray;
 	font-size: 11px;
@@ -353,25 +370,27 @@ input[type="checkbox"]{
 
 textarea{
 	height: 100px;
-	padding-left: 35px;
 }
 
 #name{
 	background-image: url("../images/gfx/contact_user.png");
 	background-position: 3px 0px;
 	background-repeat: no-repeat;
+	padding-left: 30px;
 }
 
 #email{
 	background-image: url("../images/gfx/contact_envelope.png");
 	background-position: 5px 1px;
 	background-repeat: no-repeat;
+	padding-left: 30px;
 }
 
 #message{
 	background-image: url("../images/gfx/contact_message.png");
 	background-position: 5px 5px;
 	background-repeat: no-repeat;
+	padding-left: 35px;
 }
 
 .two-in-row input{
@@ -822,6 +841,31 @@ a.block{
 	}
 
 }
+
+.work{
+	width:100%;
+	padding: 20px 0;
+	border-bottom: 1px solid @lightgray;
+	cursor: pointer;
+	.box-sizing();
+	.position{
+		width: 100%;
+		.museo300;
+		font-size: 20px;
+		img{
+			float: right;
+			margin-top: 10px;
+		}
+	}
+	.work-desc{
+		display: none;
+		margin-top: 20px;
+	}
+
+
+}
+
+
 
 .flash-success{
 	width: 100%;

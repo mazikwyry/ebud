@@ -31,7 +31,6 @@ $('.search-form form').submit(function(){
 	'columns'=>array(
 		'id',
 		'position',
-		'description',
 		array(
 			'class'=>'CButtonColumn',
 		),

@@ -6,7 +6,7 @@ class UpdateController extends Controller
 	 * @var mixed no permission rules for this controller
 	 */
 	public static $_permissionControl = false;
-
+	
 	/**
 	 * @return array action filters
 	 */

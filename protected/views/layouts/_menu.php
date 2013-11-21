@@ -5,7 +5,8 @@
     <li><?php echo CHtml::link("oferta", Yii::app()->createUrl('site/oferta')) ?></li>
     <li><?php echo CHtml::link("realizacje", Yii::app()->createUrl('projectsCat/index')) ?></li>
     <li class="logo"><?php echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl."/images/gfx/logo.png"), Yii::app()->request->baseUrl."/",array("rel"=>"#top","class"=>"special_link")) ?></li>
-    <li>wypożyczalnia</li>
+    <li><?php echo CHtml::link("kariera", Yii::app()->createUrl('career/index')) ?></li>
+    <li><?php echo CHtml::link("wypożyczalnia", Yii::app()->createUrl('rent/index')) ?></li>
     <li><?php echo CHtml::link("kontakt", Yii::app()->createUrl('site/contact')) ?></li>
  </ul>
     

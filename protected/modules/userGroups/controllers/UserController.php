@@ -20,6 +20,7 @@ class UserController extends Controller
 	}
 	
 	public $layout='//layouts/column2';
+	public $loadJQuery=true;
 	/**
 	 * Specifies the access control rules.
 	 * This method is used by the 'accessControl' filter.

@@ -24,7 +24,7 @@ class AdminController extends Controller
 			'userGroupsAccessControl', // perform access control for CRUD operations
 		);
 	}
-
+	public $loadJQuery=true;
 	/**
 	 * Specifies the access control rules.
 	 * This method is used by the 'accessControl' filter.

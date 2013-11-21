@@ -45,4 +45,10 @@
 				$(".captcha").slideDown();
 		});
 
+		$('.work').click(function(){
+			$(this).children(".work-desc").slideToggle();
+		});
+
+
+
 	});

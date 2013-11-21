@@ -1,17 +1,19 @@
-<?php
-$this->breadcrumbs=array(
-	'Oferty pracy',
-);
+<div class="con">
+	<div class="padding-box align_left">
+        <div class="big-header">
+            <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/kariera.png" />
+            kariera
+        </div>
+		Obecnie zatrudniamy 29 osób o wysokich kwalifikacjach zawodowych popartych solidną wiedzą i doświadczeniem.
+		Jeśli chcesz dołączyć do naszego zespołu i wziąć udział w realizacji dużych projektów budowlanych wyślij swoje CV na adres <a href="mailto:info@eurobud.tychy.pl">info@eurobud.tychy.pl</a>.
+		<br/><br/>
+		Ponieżj znajdują się aktualne ofery pracy w naszym zespole:
+		<br/><br/>
+		<?php $this->widget('zii.widgets.CListView', array(
+			'dataProvider'=>$dataProvider,
+			'itemView'=>'_view',
+		)); ?>
+	</div>
+</div>
 
-$this->menu=array(
-	array('label'=>'Create Career', 'url'=>array('create')),
-	array('label'=>'Manage Career', 'url'=>array('admin')),
-);
-?>
 
-<h1>Careers</h1>
-
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>

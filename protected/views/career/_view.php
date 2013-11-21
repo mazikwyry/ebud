@@ -1,16 +1,13 @@
-<div class="view">
+<div class="work">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('position')); ?>:</b>
-	<?php echo CHtml::encode($data->position); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('description')); ?>:</b>
-	<?php echo CHtml::encode($data->description); ?>
-	<br />
+	<div class="position">
+		<?php echo CHtml::encode($data->position); ?>
+		<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/more.png" />
+	</div>
+	<div class="cl"></div>
+	<div class="work-desc">
+		<?php echo $data->description; ?>
+	</div>
 
 
 </div>

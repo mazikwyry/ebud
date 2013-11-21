@@ -127,6 +127,7 @@ class CareerController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$this->layout='//layouts/column1';
 		$dataProvider=new CActiveDataProvider('Career');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
