@@ -1,14 +1,9 @@
 <?php $this->beginContent('//layouts/content'); ?>
 <section class="content">
-	<div class="con align_left">   
-		<div class="twenty-five-box left no-padding">
-			<ul class="left-menu">
-				<li class="current"><a>aktualności</a></li>
-				<li><a>historia</a></li>
-				<li><a>zespól</a></li>
-				<li><a>misja</a></li>
-			</ul>
 
+	<div class="con align_left">   
+		<?= $this->clips['header'] ?>
+		<div class="twenty-five-box left no-padding">
 			<?php
 	            $this->beginWidget('zii.widgets.CPortlet');
 	            $this->widget('zii.widgets.CMenu', array(
@@ -19,13 +14,7 @@
 	        ?>
 		</div>
 		<div class="seventy-box right">
-			<?php
-			$this->widget('zii.widgets.CBreadcrumbs', array(
-			    'links'=>$this->breadcrumbs,
-			    'separator'=> "<span class=\"separator\">></span>",
-			    'homeLink' => "<img src=\"".Yii::app()->request->baseUrl."/images/gfx/home.png\" alt=\"Start\" />"
-			));
-			?>
+
 			<?php echo $content; ?>
 		</div>
 

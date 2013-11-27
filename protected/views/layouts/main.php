@@ -31,10 +31,10 @@
                 BUDOWNICTWO
                 <div class="hidden-submenu">
                     <ul>
-                        <li>o firmie</li>
-                        <li>oferta</li>
-                        <li>realizacje</li>
-                        <li>kariera</li>
+                        <li href="<?php echo Yii::app()->request->baseUrl ?>/#ofirmie" class="special_link" rel="#ofirmie">o firmie</li>
+                        <li><?php echo CHtml::link("oferta", Yii::app()->createUrl('site/oferta')) ?></li>
+                        <li><?php echo CHtml::link("realizacje", Yii::app()->createUrl('projectsCat/index')) ?></li>
+                        <li><?php echo CHtml::link("kariera", Yii::app()->createUrl('career/index')) ?></li>
                     </ul>
                 </div>
             </div>
@@ -44,9 +44,9 @@
                 WYPOŻYCZALNIA
                 <div class="hidden-submenu rents">
                     <ul>
-                        <li>deskowania</li>
-                        <li>rusztowania</li>
-                        <li>sprzęt budowlany</li>
+                        <li><?php echo CHtml::link("deskowania", Yii::app()->createUrl('rent/index', array("tab"=>"deskowania"))) ?></li>
+                        <li><?php echo CHtml::link("rusztowania", Yii::app()->createUrl('rent/index', array("tab"=>"rusztowania"))) ?></li>
+                        <li><?php echo CHtml::link("sprzęt budowlany", Yii::app()->createUrl('rent/index')) ?></li>
                     </ul>
                 </div>
             </div>
@@ -58,44 +58,7 @@
     </section>
     <div class="cl"></div>
     <footer>
-        <div class="con">
-            <div class="left">
-                <nav>
-                    <div class="column left">
-                        <div class="nav-header">
-                            budownictwo
-                        </div>
-                        <ul>
-                            <li><a>oferta</a></li>
-                            <li><a>aktualności</a></li>
-                            <li><a>realizacje</a></li>
-                            <li><a>partnerzy</a></li>
-                            <li><a>kariera</a></li>
-                        </ul>
-                    </div>
-                    <div class="column left">
-                        <div class="nav-header">
-                            wypożyczalnia
-                        </div>
-                        <ul>
-                            <li><a>deskowania</a></li>
-                            <li><a>rusztowania</a></li>
-                            <li><a>inne</a></li>
-                            <li><a>sprzedaż akcesoriów</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-
-            <div class="right contact">
-                EUROBUD S.C.<br/>
-                Przemysowa 66<br/>
-                43-174 Tychy<br/>
-                <a href="mailto:info@eurobud.tychy.pl">info@eurobud.tychy.pl</a>
-            </div>
-
-        </div>
-        <div class="cl"></div>
+        <?php echo $this->renderPartial('//layouts/_bottom'); ?>
     </footer>
 </body>
 </html>

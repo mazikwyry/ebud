@@ -38,9 +38,17 @@ class SiteController extends Controller
         $criteria->limit = "2";
         
 		$dataProvider=News::model()->findAll($criteria);
+
+
+		$criteria = new CDbCriteria;
+        $criteria->order = 'RAND()';
+        $criteria->limit = "4";
+        $criteria->condition = 'parent_type="project"';
+        $photos=Gall::model()->findAll($criteria);
+
 		$model=new ContactForm;
         $this->render('index',array(
-            'news'=>$dataProvider,'model'=>$model)
+            'news'=>$dataProvider,'model'=>$model,'photos'=>$photos)
         );
 	}
 

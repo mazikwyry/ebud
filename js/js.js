@@ -49,6 +49,11 @@
 			$(this).children(".work-desc").slideToggle();
 		});
 
-
+		$('.rent-el').click(function(){
+			if($(this).find(".rent-desc").css("display")=="none"){
+				$('.rent-el').find(".rent-desc").slideUp();
+				$(this).find(".rent-desc").slideToggle();
+			}
+		});
 
 	});

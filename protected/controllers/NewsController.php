@@ -50,6 +50,7 @@ class NewsController extends Controller
 	 */
 	public function actionView($id)
 	{
+		$this->layout='//layouts/column1';
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
@@ -192,12 +193,16 @@ class NewsController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$criteria = new CDbCriteria;
+        $criteria->order = 'date_added DESC';
 		$dataProvider=new CActiveDataProvider('News',array(         
     		    'pagination'=>array(
                     'pageSize'=>10,
                 ),
+                'criteria'=>$criteria,
             )
         );
+        $this->layout='//layouts/column1';
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

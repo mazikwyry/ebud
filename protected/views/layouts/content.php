@@ -9,7 +9,7 @@
         <link rel="stylesheet/less" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.less">
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/jquery-ui-1.10.3.custom.min.css">
         <link rel="stylesheet/less" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/dropzone.css">
-                <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/js/logo-parade/css/smoothDivScroll.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/js/logo-parade/css/smoothDivScroll.css">
         <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/lightbox.css" rel="stylesheet" />
         <!-- SCRIPTS -->
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/less.js" type="text/javascript"></script>
@@ -47,44 +47,7 @@
 
     <div class="cl"></div>
     <footer>
-        <div class="con">
-            <div class="left">
-                <nav>
-                    <div class="column left">
-                        <div class="nav-header">
-                            budownictwo
-                        </div>
-                        <ul>
-                            <li><a>oferta</a></li>
-                            <li><a>aktualności</a></li>
-                            <li><a>realizacje</a></li>
-                            <li><a>partnerzy</a></li>
-                            <li><a>kariera</a></li>
-                        </ul>
-                    </div>
-                    <div class="column left">
-                        <div class="nav-header">
-                            wypożyczalnia
-                        </div>
-                        <ul>
-                            <li><a>deskowania</a></li>
-                            <li><a>rusztowania</a></li>
-                            <li><a>inne</a></li>
-                            <li><a>sprzedaż akcesoriów</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-
-            <div class="right contact">
-                EUROBUD S.C.<br/>
-                Przemysowa 66<br/>
-                43-174 Tychy<br/>
-                <a href="mailto:info@eurobud.tychy.pl">info@eurobud.tychy.pl</a>
-            </div>
-
-        </div>
-        <div class="cl"></div>
+        <?php echo $this->renderPartial('//layouts/_bottom'); ?>
     </footer>
 </body>
 </html>

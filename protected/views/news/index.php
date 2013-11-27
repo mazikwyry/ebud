@@ -1,16 +1,18 @@
-<?php
-$this->breadcrumbs=array(
-	'o firmie',
-	'aktualności',
-);
+<div class="con">
+	<div class="padding-box align_left">
 
-$this->menu=array(
-	array('label'=>'Nowy news', 'url'=>array('create')),
-	array('label'=>'Zarządzaj newsami', 'url'=>array('admin')),
-);
-?>
-
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>
+		<div class="big-header">
+		    <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/news.png" />
+		    aktualności
+		</div>
+		<div class="list_news recent-news archive">
+			<?php $this->widget('zii.widgets.CListView', array(
+				'dataProvider'=>$dataProvider,
+				'itemView'=>'_view',
+				'summaryText'=>'',
+			));
+			?>
+			<div class="cl"></div>
+		</div>
+	</div>
+</div>

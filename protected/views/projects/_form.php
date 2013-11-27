@@ -41,6 +41,7 @@
 
 </div><!-- form -->
 
+<?php echo $this->renderPartial('//layouts/_tiny_mce'); ?>
 <div class="cl"></div>
 <br/>
 <?php if (!$model->isNewRecord) { ?>
@@ -52,6 +53,7 @@
 		<div class="cl"></div>
 	</form>
 </div>
+
 
 
 

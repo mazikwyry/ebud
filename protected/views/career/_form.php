@@ -29,4 +29,4 @@
 
 </div><!-- form -->
 
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/tiny-mce.js"></script>
+<?php echo $this->renderPartial('//layouts/_tiny_mce'); ?>

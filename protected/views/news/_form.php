@@ -41,3 +41,5 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+<?php echo $this->renderPartial('//layouts/_tiny_mce'); ?>

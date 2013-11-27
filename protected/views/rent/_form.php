@@ -35,7 +35,7 @@
 
 <div class="cl"></div>
 <br/>
-
+<?php echo $this->renderPartial('//layouts/_tiny_mce'); ?>
 <?php if (!$model->isNewRecord) { ?>
 
 	<div class="form">

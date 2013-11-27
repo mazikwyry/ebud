@@ -127,6 +127,7 @@ class RentController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$this->layout = '//layouts/column2';
 		$dataProvider=new CActiveDataProvider('Rent');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,

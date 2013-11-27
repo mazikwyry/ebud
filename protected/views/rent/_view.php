@@ -1,19 +1,23 @@
-<div class="view">
+<div class="rent-el">
+	<div class="tr">
+		<div class="rent_img">
+			<div>
+				<?php
+					foreach ($data->images as $image) {echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl."/images/images/big/".$image->photo, "Image"), Yii::app()->request->baseUrl."/images/images/big/".$image->photo, array('data-lightbox' => 'gall' ));}
+				?>
+			</div>
+		</div>
+		<div class="rent_name">
+			<?php echo CHtml::encode($data->item); ?>
+			<div class="rent-desc">
+				<?php echo $data->description ?>
+			</div>
+		</div>
+		<div class="rent_price">
+			<span><?php echo CHtml::encode($data->price); ?></span>
+		</div>
+	</div>
+<!-- 	<div class="tr-desc">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('item')); ?>:</b>
-	<?php echo CHtml::encode($data->item); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('description')); ?>:</b>
-	<?php echo CHtml::encode($data->description); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('price')); ?>:</b>
-	<?php echo CHtml::encode($data->price); ?>
-	<br />
-
+	</div> -->
 </div>

@@ -1,6 +1,10 @@
 <div class="con">
 	<div class="diamond">
-	    <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/house.png" />
+		<?php 
+		$x = 1;
+		foreach ($photos as  $photo) { ?>
+	    	<?php echo CHtml::image(Yii::app()->request->baseUrl."/images/images/big/".$photo->photo, "Image", array("id"=>$x++)); ?>
+	    <?php } ?>
 	</div> 
 	<div class="half align_left" style="padding-right:60px;">
 	    <div class="header">
@@ -90,13 +94,28 @@
 
 			<?php } ?>
 			<div class="cl"></div>
-			<a class="block">Zobacz archiwum &raquo;</a>
+			<a class="block" style="margin:15px 0;" href="<?php echo Yii::app()->createUrl('news/index'); ?>">Zobacz archiwum &raquo;</a>
 		</div>
 	    <div class="cl"></div>
 
 	</div>
 </div>
 <?php echo $this->renderPartial('//layouts/_partners'); ?>
+
+<<script type="text/javascript">
+	var diamonds_imgs = <?php echo count($photos) ?>;
+	var current_img = 1;
+	$(document).ready(function() {
+		setInterval(function() {
+			$('#'+current_img).fadeOut();
+			if(current_img==diamonds_imgs)
+				current_img=1;
+			else
+				current_img++;
+			$('#'+current_img).fadeIn();
+		},3000)
+	});
+</script>
 
 
 
