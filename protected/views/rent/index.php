@@ -20,11 +20,7 @@ $this->menu=array(
 
 
 <div class="tab sprzet" style="display:none;">
-	<?php $this->widget('zii.widgets.CListView', array(
-		'dataProvider'=>$dataProvider,
-		'itemView'=>'_view',
-		'summaryText'=>'',
-	)); ?>
+
 </div>
 
 <div class="tab deskowania" style="display:none;">
