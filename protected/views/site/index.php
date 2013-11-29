@@ -102,7 +102,7 @@
 </div>
 <?php echo $this->renderPartial('//layouts/_partners'); ?>
 
-<<script type="text/javascript">
+<script type="text/javascript">
 	var diamonds_imgs = <?php echo count($photos) ?>;
 	var current_img = 1;
 	$(document).ready(function() {
