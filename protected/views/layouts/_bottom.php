@@ -27,7 +27,7 @@
 
     <div class="right contact">
         EUROBUD S.C.<br/>
-        Przemysowa 66<br/>
+        Przemysłowa 66<br/>
         43-174 Tychy<br/>
         <a href="mailto:info@eurobud.tychy.pl">info@eurobud.tychy.pl</a>
     </div>

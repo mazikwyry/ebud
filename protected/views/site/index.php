@@ -10,7 +10,7 @@
 	    <div class="header">
 	        o firmie
 	    </div>
-	    Jesteśmy firmą dla której budownictwo jest pasją, której oddajemy się bez reszty. Nie biomy się trudnych wyzwań i wymagających Inwestorów. Nasze niemałe doświadczenie w branży budowlanej gwarantuje, że każde powierzone nam zadanie zrealizujemy terminowo i z najwyższą jakością.
+	    Jesteśmy firmą dla której budownictwo jest pasją, której oddajemy się bez reszty. Nie boimy się trudnych wyzwań i wymagających Inwestorów. Nasze niemałe doświadczenie w branży budowlanej gwarantuje, że każde powierzone nam zadanie zrealizujemy terminowo i z najwyższą jakością.
 	    <br/><br/>
 
 	</div>
@@ -53,7 +53,7 @@
 	    <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/cel.png" />
 	    <div class="big-content">
 	        <div class="title">Nasza misja</div>
-	        <div class="shot">Misją firmy stało się <strong>stworzenie wiarygodnego i solidnego partnera dla realizacji celów inwestycyjnych</strong>. Osiągamy powyższy cel poprzez dbanie o konkurencyjność, utrzymywanie stałych relacji z Inwestorami oraz poprzez fachowe doradztwo i wykonawstwo.</div>
+	        <div class="shot">Misją firmy stało się <strong>stworzenie wiarygodnego i solidnego partnera dla realizacji celów inwestycyjnych</strong>. Osiągamy powyższy cel poprzez dbanie o konkurencyjność, utrzymywanie stałych relacji z Inwestorami oraz przez fachowe doradztwo i wykonawstwo.</div>
 	    </div>
 	    <div class="cl"></div>
 	</div>
