@@ -56,4 +56,6 @@
 			}
 		});
 
+		$(".big-info").css("min-height",(($(window).height()-68)/2)+"px");
+
 	});

@@ -48,7 +48,7 @@
 	</div>
 	<div class="cl"></div>
 </div>
-<div class="big-info mission" name="ofirmie" id="ofirmie">
+<div class="big-info mission" name="ofirmie" id="ofirmie" style="margin-top:100px;">
 	<div class="con">
 	    <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/cel.png" />
 	    <div class="big-content">
