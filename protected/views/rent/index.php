@@ -39,14 +39,14 @@ $this->menu=array(
 
 
 <script type="text/javascript">
-	$(".left-menu a").click(function() {
-		$(".tab").slideUp();
-		$("."+$(this).attr("id")).slideDown();
-		$(".left-menu li").removeClass("current");
-		$(this).parent().addClass("current");
-	})
 	$(document).ready(function() {
+		$(".left-menu a").click(function() {
+			$(".tab").slideUp();
+			$("."+$(this).attr("id")).slideDown();
+			$(".left-menu li").removeClass("current");
+			$(this).parent().addClass("current");
+		});
 		$("#<?php echo isset($_GET['tab']) ? $_GET['tab'] : 'sprzet'; ?>").parent().addClass("current");
 		$(".<?php echo isset($_GET['tab']) ? $_GET['tab'] : 'sprzet'; ?>").slideDown();
-	})
+	});
 </script>
