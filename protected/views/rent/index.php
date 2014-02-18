@@ -28,14 +28,14 @@ $this->menu=array(
 </div>
 
 <div class="tab deskowania" style="display:none;">
-	dLorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, maiores, eveniet eligendi temporibus at soluta laboriosam harum perferendis velit a cupiditate asperiores. Fugiat, cum, eaque minima suscipit reiciendis excepturi qui.
+	Posiadamy deskowania ścienne i stropowe renomowanej firmy DOKA.
 </div>
 
 <div class="tab rusztowania" style="display:none;">
-	rLorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, doloribus voluptatem sapiente consequatur sed culpa error molestiae unde. Atque, provident, earum laborum error accusantium aliquam temporibus nostrum sit reiciendis corporis.
+	Rusztowania elewacyjne ramowe to kolejna propozycja w naszym dziale wypożyczalni. Posiadamy atestowane rusztowania, które zapewnią bezpieczną pracę na budowie.
 </div>
 
-<h2 class="call-us">Jeżeli jesteś zainteresowany ofertą naszej wypożyczalni - zadzwoń <span>(32) 775 46 91</span><h2>
+<h2 class="call-us">Jeżeli jesteś zainteresowany ofertą naszej wypożyczalni - zadzwoń <span>663 038 883</span><h2>
 
 
 <script type="text/javascript">

@@ -54,13 +54,13 @@
 		    <div class="museo-bigger">
 			    EUROBUD S.C.<br/>
 	            Przemysłowa 66<br/>
-	            43-174 Tychy<br/>
-	            <a href="mailto:info@eurobud.tychy.pl">info@eurobud.tychy.pl</a><br/>
+	            43-100 Tychy<br/>
+	            <a href="mailto:biuro@eurobud.tychy.pl">biuro@eurobud.tychy.pl</a><br/>
 			    Tel. biuro: (32) 775 46 91
 			</div>
 		    <br/>
 		    <b>Adam Nalepa</b><br/><em>Kierownik d/s przygotowania produkcji i realizacji inwestycji</em> <br/>
-			Tel. 500 663 865, <a href="mailto:adam@eurobud.tychy.pl">adam@eurobud.tychy.pl</a>
+			Tel. 500 663 865, <a href="mailto:a.nalepa@eurobud.tychy.pl">a.nalepa@eurobud.tychy.pl</a>
 			<br/><br/>
 			<b>Adam Włodarz</b><br/><em>Kierownik techniczno-handlowy</em> <br/>
 			Tel. 663 038 883, <a href="mailto:a.wlodarz@eurobud.tychy.pl">a.wlodarz@eurobud.tychy.pl</a>
