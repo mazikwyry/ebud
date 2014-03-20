@@ -65,6 +65,9 @@
 			<b>Adam Włodarz</b><br/><em>Kierownik techniczno-handlowy</em> <br/>
 			Tel. 663 038 883, <a href="mailto:a.wlodarz@eurobud.tychy.pl">a.wlodarz@eurobud.tychy.pl</a>
 			<br/><br/>
+			<b>Dominik Duży</b><br/><em>Kierownik grupy robót</em> <br/>
+			Tel. 500 663 875, <a href="mailto:d.duzy@eurobud.tychy.pl">d.duzy@eurobud.tychy.pl</a>
+			<br/><br/>
 		</div>
 		<div class="cl"></div>
 	</div>

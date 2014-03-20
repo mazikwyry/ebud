@@ -5,7 +5,7 @@
             kariera
         </div>
 		Obecnie zatrudniamy 29 osób o wysokich kwalifikacjach zawodowych popartych solidną wiedzą i doświadczeniem.
-		Jeśli chcesz dołączyć do naszego zespołu i wziąć udział w realizacji dużych projektów budowlanych wyślij swoje CV na adres <a href="mailto:info@eurobud.tychy.pl">info@eurobud.tychy.pl</a>.
+		Jeśli chcesz dołączyć do naszego zespołu i wziąć udział w realizacji dużych projektów budowlanych wyślij swoje CV na adres <a href="mailto:biuro@eurobud.tychy.pl">biuro@eurobud.tychy.pl</a>.
 		<br/><br/>
 		Ponieżj znajdują się aktualne ofery pracy w naszym zespole:
 		<br/><br/>

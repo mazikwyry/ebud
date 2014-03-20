@@ -43,7 +43,7 @@ class SiteController extends Controller
 		$criteria = new CDbCriteria;
         $criteria->order = 'RAND()';
         $criteria->limit = "4";
-        $criteria->condition = 'parent_type="project"';
+        $criteria->condition = 'parent_type="project" && id_parent IN (SELECT id FROM projects)';
         $photos=Gall::model()->findAll($criteria);
 
 		$model=new ContactForm;

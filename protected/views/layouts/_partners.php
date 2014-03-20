@@ -4,11 +4,9 @@
         <a target="_blank" href="http://www.doka.com/web/home/index.pl.php?startPageLanguage=PL"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/doka.png" /></a>
         <a target="_blank" href="http://www.fargosystems.pl/fargo-systembau/"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/fagro.png" /></a>
         <a target="_blank" href="http://www.instalbud.pl/new/"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/instalbud.png" /></a>
-        <a target="_blank" href="http://www.pol-invest.com.pl/"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/polinvest.png" /></a>
         <a target="_blank" href="http://www.pressglass.eu/"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/pressglass.png" /></a>
         <a target="_blank" href="http://sewera.pl/"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/sewera.png" /></a>
         <a target="_blank" href="http://www.unimet.tychy.pl/"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/unimet.png" /></a>
-        <a target="_blank" href="http://www.zmirob.pl"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/partners/zmirob.png" /></a>
     </div>
 </div>
 

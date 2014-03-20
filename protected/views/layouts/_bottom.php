@@ -22,8 +22,20 @@
                     <li><?php echo CHtml::link("sprzęt budowlany", Yii::app()->createUrl('rent/index')) ?></li>
                 </ul>
             </div>
+            <div class="column left">
+                <div class="nav-header">
+                    sprawdź nas
+                </div>
+                <div class="good_firm">
+                    <a href="https://wizytowka.rzetelnafirma.pl/BusinessCard.aspx?banner=G59ZXHB6" target="_blank">
+                        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gfx/rzetelna.png" />
+                    </a>
+                </div>
+            </div>
+
         </nav>
     </div>
+
 
     <div class="right contact">
         EUROBUD S.C.<br/>

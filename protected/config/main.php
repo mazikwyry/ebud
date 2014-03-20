@@ -70,10 +70,10 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=eurobud',
+			'connectionString' => 'mysql:host=cufal.pl;dbname=mazikwyr_eurobud',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
+			'username' => 'mazikwyr_mazik',
+			'password' => 'matzik',
 			'charset' => 'utf8',
 		),
 		
